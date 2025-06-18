@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DexOmni V2 – Ethereum Screener</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 DexOmni – Ethereum Tokens Screener</h1>
+
+    <div class="filters">
+      <label>🔍 فلترة حسب:</label>
+      <select id="filter-select">
+        <option value="none">الكل</option>
+        <option value="price-high">أعلى سعر</option>
+        <option value="price-low">أقل سعر</option>
+        <option value="volume-high">أعلى حجم</option>
+        <option value="volume-low">أقل حجم</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>العملة</th>
+          <th>السعر</th>
+          <th>الحجم (24h)</th>
+          <th>الرسم</th>
+          <th>رابط</th>
+        </tr>
+      </thead>
+      <tbody id="pairs-table">
+        <!-- البيانات هنا -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
