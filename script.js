@@ -33,7 +33,7 @@ function renderTable(pairs) {
 
     row.innerHTML = `
       <td>${index + 1}</td>
-      <td>${pair.baseToken.name} (${pair.baseToken.symbol})</td>
+      <td><a href="details.html?pair=${pair.pairAddress}" style="color:#00ffcc">${pair.baseToken.name} (${pair.baseToken.symbol})</a></td>
       <td>$${parseFloat(pair.priceUsd).toFixed(6)}</td>
       <td>$${Number(pair.volume.h24).toLocaleString()}</td>
       <td><canvas id="chart-${index}"></canvas></td>
